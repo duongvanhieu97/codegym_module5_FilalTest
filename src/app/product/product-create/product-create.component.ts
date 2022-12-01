@@ -24,7 +24,7 @@ export class ProductCreateComponent implements OnInit{
   saveProduct() {
     const product = this.productForm.value;
     this.productService.save(product).subscribe(()=>{
-      alert("Them thanh cong")
+      alert("Thêm thành công")
     });
     this.productForm.reset();
   }

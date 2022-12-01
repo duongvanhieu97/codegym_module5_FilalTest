@@ -39,7 +39,7 @@ export class ProductEditComponent implements OnInit {
   editProduct() {
     const editProduct = this.productForm.value
     this.productService.editProduct(editProduct.id, editProduct).subscribe(() => {
-      alert("Cap nhat thanh cong");
+      alert("Cập nhập thành công");
     })
   }
 }

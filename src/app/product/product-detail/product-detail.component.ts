@@ -36,10 +36,10 @@ export class ProductDetailComponent implements OnInit{
     })
   }
 
-  editProduct() {
-    const editProduct = this.productForm.value
-    this.productService.editProduct(editProduct.id, editProduct).subscribe(() => {
-      alert("Cap nhat thanh cong");
-    })
-  }
+  // editProduct() {
+  //   const editProduct = this.productForm.value
+  //   this.productService.editProduct(editProduct.id, editProduct).subscribe(() => {
+  //     alert("Cập nhập thành công");
+  //   })
+  // }
 }
