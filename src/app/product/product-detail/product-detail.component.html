@@ -3,26 +3,27 @@
     <div class="col-2"></div>
     <div class="col-8">
       <form [formGroup]="productForm">
+        <h2>Chi tiết sản phẩm</h2>
         <div class="font-group">
           <input hidden class="form-control" formControlName="id"
                  id="id" placeholder="name">
         </div>
         <div class="text-left">
-          <label>Title</label>
+          <label>Tên Sản Phẩm</label>
         </div>
         <div class="font-group">
           <input type="text" class="form-control" formControlName="title"
                  id="title" placeholder="name">
         </div>
         <div class="text-left">
-          <label>Price</label>
+          <label>Giá</label>
         </div>
         <div class="font-group">
           <input type="text" class="form-control" formControlName="price"
                  id="price" placeholder="Price">
         </div>
         <div class="text-left">
-          <label>Description</label>
+          <label>Mô tả</label>
         </div>
         <div class="font-group">
           <input type="text" class="form-control" formControlName="description"

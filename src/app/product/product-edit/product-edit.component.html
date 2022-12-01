@@ -3,6 +3,7 @@
     <div class="col-2"></div>
     <div class="col-8">
       <form [formGroup]="productForm" (ngSubmit)="editProduct()">
+        <h3>Sửa sản phẩm</h3>
         <div class="font-group">
           <input hidden class="form-control" formControlName="id"
                  id="id" placeholder="name">
@@ -28,8 +29,8 @@
           <input type="text" class="form-control" formControlName="description"
                  id="description" placeholder="Description">
         </div>
-        <button type="submit" class="btn btn-success">Sửa</button>
-        <button routerLink="" class="btn btn-success" style="">Hủy</button>
+        <button type="submit" class="btn btn-success" style="margin: 20px 20px" >Sửa</button>
+        <button routerLink="" class="btn btn-success" >Trở lại</button>
       </form>
     </div>
     <div class="col-2"></div>
