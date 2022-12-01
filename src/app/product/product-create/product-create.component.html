@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <form [formGroup]="productForm" (ngSubmit)="saveProduct()"  >
+        <div class="text-left" >
+          <label>Tên</label>
+        </div>
+        <div class="font-group">
+          <input type="text" class="form-control" formControlName="title"
+                 id="title" placeholder="Tên">
+        </div>
+        <div class="text-left">
+          <label>Giá</label>
+        </div>
+        <div class="font-group">
+          <input type="text" class="form-control" formControlName="price"
+                 id="price" placeholder="Giá" >
+        </div>
+        <div class="text-left">
+          <label>Mô tả</label>
+        </div>
+        <div class="font-group">
+          <input type="text" class="form-control" formControlName="description"
+                 id=" description" placeholder="Mô tả" >
+        </div>
+        <button type="submit" class="btn btn-success">Thêm mới</button>
+        <button routerLink="" class="btn btn-success" style="">Trở lại</button>
+      </form>
+    </div>
+    <div class="col-2"></div>
+  </div>
+</div>

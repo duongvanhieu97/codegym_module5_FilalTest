@@ -1,0 +1,31 @@
+<button>
+  <a routerLink="saveProduct" class="btn btn-success">Thêm</a>
+</button>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Tên</th>
+    <th scope="col">Giá</th>
+    <th scope="col">Mô Tả</th>
+    <th scope="col">Hành Động</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let to of products; index as i">
+    <td>{{i + 1}}</td>
+    <td><a routerLink="detail-product/{{to.id}}">{{to.title}}</a></td>
+    <td>{{to.price}}</td>
+    <td>{{to.description}}</td>
+    <td>
+      <button>
+        <a routerLink="edit-product/{{to.id}}" class="btn btn-warning">Sửa</a>
+      </button>
+    </td>
+    <td>
+      <button (click)="delete(to.id)" class="btn btn-danger">Xóa</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>
